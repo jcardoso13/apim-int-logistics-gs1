@@ -1,0 +1,333 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "type": "string"
+    },
+    "PolicyXMLBaseUrl": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "5fe1b732b96f780dd2c4e592_final-transport-status-notification_5ffccf1bde915d8aa0c05667",
+        "value": "kJb_KsXUZY_zNKAPGBOTmUqB3WwbE-hHMekxfBRNLhE"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5ffccf1bde915d8aa0c05667')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "5fe1b732b96f780dd2c4e592_final-transport-status-notification_5ffccf35481e052ea83bd9e4",
+        "value": "mGN0hTgLPdVMcU4yOtKbpGPgli1rlvLPPAldlmHmOl4"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5ffccf35481e052ea83bd9e4')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "5fe1b732b96f780dd2c4e592_final-transport-status-notification_60145be310ad11fa7cc6f598",
+        "value": "y4W5BqE2ODoTe-2dtuuApLSu3Tmlohu2vpQ_kDgVnLw"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/60145be310ad11fa7cc6f598')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "5fe1b732b96f780dd2c4e592_warehousing-inbound-notification_602d98643c2a814a70f7994b",
+        "value": "y4W5BqE2ODoTe-2dtuuApLSu3Tmlohu2vpQ_kDgVnLw"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/602d98643c2a814a70f7994b')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_dhl-inbound-logistics-order_5fc7bff3484fbf1c0316135c",
+        "value": "B_Yp76JlVAysnpAiQpTwetDjp4i80OtxBjMjZ41kfMA"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fc7bff3484fbf1c0316135c')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_dhl-inbound-logistics-order_6012d69e509aaffb53fc0e64",
+        "value": "_MqezGe0lPcvgpDPG2aGa1_oviFzV3T997JXCXXzLM8"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/6012d69e509aaffb53fc0e64')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_dhl-inbound-logistics-order_601440e5f6f47d2b3e747d3c",
+        "value": "_MqezGe0lPcvgpDPG2aGa1_oviFzV3T997JXCXXzLM8"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/601440e5f6f47d2b3e747d3c')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_dhl-outbound-logistics-order_5fc77940b120106db552ad74",
+        "value": "B_Yp76JlVAysnpAiQpTwetDjp4i80OtxBjMjZ41kfMA"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fc77940b120106db552ad74')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_dhl-outbound-logistics-order_60144f7f7268b479f3ccfd02",
+        "value": "_MqezGe0lPcvgpDPG2aGa1_oviFzV3T997JXCXXzLM8"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/60144f7f7268b479f3ccfd02')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_inbound-logistcs-order_5fbed9446a11dee1a6e7b3f6",
+        "value": "B_Yp76JlVAysnpAiQpTwetDjp4i80OtxBjMjZ41kfMA"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fbed9446a11dee1a6e7b3f6')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_outbound-logistics-order_5fbfdc42f3d744cf74ec28a4",
+        "value": "B_Yp76JlVAysnpAiQpTwetDjp4i80OtxBjMjZ41kfMA"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fbfdc42f3d744cf74ec28a4')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_put-inbound-logistics-order_6014406758f52a21009bd4c1",
+        "value": "_MqezGe0lPcvgpDPG2aGa1_oviFzV3T997JXCXXzLM8"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/6014406758f52a21009bd4c1')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_track-and-trace-transport-orders-only_5fe1b9199fef76d787b2c975",
+        "value": "B_Yp76JlVAysnpAiQpTwetDjp4i80OtxBjMjZ41kfMA"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fe1b9199fef76d787b2c975')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "dhl-system-api_track-and-trace-transport-orders-only_60145b1831f94ea6db735d55",
+        "value": "_MqezGe0lPcvgpDPG2aGa1_oviFzV3T997JXCXXzLM8"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/60145b1831f94ea6db735d55')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "sap-experience-api_pick-up-order_5fc760903a6e9b6691d951ea",
+        "value": "ZQT4OUfyMtKJwmYZQNOcnBzKl0ykbaCMOqSBEtc0k5M"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fc760903a6e9b6691d951ea')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "sap-system-api_warehousing-receipt-notification_5fd0d6d8af27ac14198ece43",
+        "value": "FTnGp_hxNvyll4owrhcFCb3BZndliaUvh55Riktmlic"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fd0d6d8af27ac14198ece43')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "sap-system-api_warehousing-receipt-notification_6013018d599200be63a2fd84",
+        "value": "lB6jW67cnU3cgl8Sabsz17SRBBXQK7A-Qu8L_c_J0jc"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/6013018d599200be63a2fd84')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "transport-processing-api_transport-deliver-notification_5fc9fe700ffb538be6e7fa29",
+        "value": "kJb_KsXUZY_zNKAPGBOTmUqB3WwbE-hHMekxfBRNLhE"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fc9fe700ffb538be6e7fa29')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "transport-processing-api_transport-deliver-notification_6033c994e0c29b98f5efbada",
+        "value": "qLyUdR3u8qZ_TGBZ8OpEt_EaMK2rsNS4QRwcXMsm4SE"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/6033c994e0c29b98f5efbada')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "transport-processing-api_transport-status-request_5fe1bd33774caf8f9b5d3881",
+        "value": "kJb_KsXUZY_zNKAPGBOTmUqB3WwbE-hHMekxfBRNLhE"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fe1bd33774caf8f9b5d3881')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "transport-processing-api_transport-status-request_6033cd0c1800199576401968",
+        "value": "qLyUdR3u8qZ_TGBZ8OpEt_EaMK2rsNS4QRwcXMsm4SE"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/6033cd0c1800199576401968')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_post-warehousing-receipt-instruction_600b507cc2dd0045cd6271e0",
+        "value": "8soq_mxj-EjEFIK5FJfyMiLUc6blEq0kTbj_6qbfFWw"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/600b507cc2dd0045cd6271e0')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_put-warehousing-receipt-instruction_5fcde6b4ff3ef64d475a827c",
+        "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fcde6b4ff3ef64d475a827c')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_put-warehousing-receipt-instruction_5fd960c647ad30e2e12a661c",
+        "value": "jRPub6Q8ycr-rLt3JO6rbDgGA_FY9KODx2VDYeLZCLU"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fd960c647ad30e2e12a661c')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_put-warehousing-receipt-instruction_5fd960e63a0ac9fdae450407",
+        "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fd960e63a0ac9fdae450407')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_warehousing-receipt-instruction_5fbe14d2d280b4616a626915",
+        "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fbe14d2d280b4616a626915')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_warehousing-receipt-instruction_5fbe1f0c7d642b18884857e9",
+        "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fbe1f0c7d642b18884857e9')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_warehousing-receipt-notification_5fbe14f52886e1b15b21a0a9",
+        "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/5fbe14f52886e1b15b21a0a9')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_warehousing-receipt-notification_600b4f078299c9cd18f7905b",
+        "value": "8soq_mxj-EjEFIK5FJfyMiLUc6blEq0kTbj_6qbfFWw"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/600b4f078299c9cd18f7905b')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    }
+  ]
+}

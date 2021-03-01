@@ -1,0 +1,9 @@
+{
+	"sourceApimName": "apim-int-deloitte",
+	"destinationApimName": "",
+	"resourceGroup": "AzureLogistics-dev",
+	"fileFolder": "c:\\Users\\joaopcardoso\\Desktop\\azureLogistics\\apim-extracted\\templates",
+	"linkedTemplatesBaseUrl": "",
+	"linkedTemplatesUrlQueryString": "",
+	"policyXMLBaseUrl": ""
+}
