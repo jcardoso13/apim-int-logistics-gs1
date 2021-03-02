@@ -28,10 +28,10 @@
 		}
 	},
 	"variables": {
-		"token-apis": "?token=AJ2IBEOEX4SZ6PF4TK4HOYLAHZGBC",
-		"token-backends": "?token=AJ2IBEMX4CN3TKD4NCGL66DAHZGGA",
-		"token-global": "?token=AJ2IBEKP5TPUMHFHPEOFU2LAHZGJE",
-		"token-named-values": "?token=AJ2IBEOIH4LSVEQR3MHHOHTAHZGME"
+		"token-apis": "",
+		"token-backends": "",
+		"token-global": "",
+		"token-named-values": ""
 	},
 	"resources": [
 		{

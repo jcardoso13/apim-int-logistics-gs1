@@ -5,10 +5,10 @@ pool:
 steps:
   - task: AzureResourceGroupDeployment@2
     displayName: >-
-      Azure Deployment: Deploy API Named Values
+      Azure Deployment: Deploy APIM
     inputs:
       azureSubscription: AzureLogistics
-      csmFile: ./template/apim-int-deloitte-master.template.json
-      csmParametersFile: ./template/apim-int-deloitte-parameters.json
+      csmFile: ./templates/apim-int-deloitte-master.template.json
+      csmParametersFile: ./templates/apim-int-deloitte-parameters.json
       location: westeurope
       resourceGroupName: AzureLogistics-dev

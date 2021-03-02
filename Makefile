@@ -8,4 +8,4 @@ all:
 		az account set -s $(SUBS)
 		az deployment group create --resource-group $(RG) --template-file apim-int-deloitte-master.template.json --parameters apim-int-deloitte-parameters.json
 deploy: 
-		az deployment group create --resource-group $(RG) --template-file apim-int-deloitte-master.template.json --parameters apim-int-deloitte-parameters.json
+		az deployment group create --resource-group $(RG) --template-file ./templates/apim-int-deloitte-master.template.json --parameters ./templates/apim-int-deloitte-parameters.json

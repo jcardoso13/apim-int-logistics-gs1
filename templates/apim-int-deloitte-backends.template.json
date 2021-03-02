@@ -39,7 +39,7 @@
 				"url": "https://prod-129.westeurope.logic.azure.com/workflows/916ccd36fd9e4fdd8ec682e70268095e/triggers",
 				"protocol": "http"
 			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pWarehousing_AzureLogistics')]",
+			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pWarehousing_AzureLogistics-dev')]",
 			"type": "Microsoft.ApiManagement/service/backends",
 			"apiVersion": "2019-01-01"
 		},
