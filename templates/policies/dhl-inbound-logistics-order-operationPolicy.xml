@@ -13,7 +13,7 @@
 <policies>
 	<inbound>
 		<base />
-		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-sDHL_AzureLogistics-dev_446850351fa74806ad411728fa06995d" />
+		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-sDHL_AzureLogistics-dev" />
 		<set-method id="apim-generated-policy">POST</set-method>
 		<rewrite-uri id="apim-generated-policy" template="/manual/paths/invoke/dhl/warehousing/inbound-logistics-order?http-method=POST&amp;api-version=2016-06-01&amp;sp=/triggers/manual/run&amp;sv=1.0&amp;sig={{dhl-system-api_dhl-inbound-logistics-order_601440e5f6f47d2b3e747d3c}}" />
 		<set-header id="apim-generated-policy" name="Ocp-Apim-Subscription-Key" exists-action="delete" />

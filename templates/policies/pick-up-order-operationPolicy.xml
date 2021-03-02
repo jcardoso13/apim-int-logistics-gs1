@@ -13,7 +13,7 @@
 <policies>
 	<inbound>
 		<base />
-		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-eSAP_AzureLogistics-dev_446850351fa74806ad411728fa06995d" />
+		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-eSAP_AzureLogistics-dev" />
 		<set-method id="apim-generated-policy">POST</set-method>
 		<rewrite-uri id="apim-generated-policy" template="/manual/paths/invoke/sap/pick-up-order?api-version=2016-06-01&amp;sp=/triggers/manual/run&amp;sv=1.0&amp;sig={{sap-experience-api_pick-up-order_5fc760903a6e9b6691d951ea}}" />
 		<set-header id="apim-generated-policy" name="Ocp-Apim-Subscription-Key" exists-action="delete" />

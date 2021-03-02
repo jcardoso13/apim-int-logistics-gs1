@@ -13,7 +13,7 @@
 <policies>
 	<inbound>
 		<base />
-		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-sOS_AzureLogistics-dev_446850351fa74806ad411728fa06995d" />
+		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-sOS_AzureLogistics-dev" />
 		<set-method id="apim-generated-policy">POST</set-method>
 		<rewrite-uri id="apim-generated-policy" template="/manual/paths/invoke/os/sys/warehousing/receipt-notification?api-version=2016-06-01&amp;sp=/triggers/manual/run&amp;sv=1.0&amp;sig={{5fe1b732b96f780dd2c4e592_warehousing-inbound-notification_602d98643c2a814a70f7994b}}" />
 		<set-header id="apim-generated-policy" name="Ocp-Apim-Subscription-Key" exists-action="delete" />
