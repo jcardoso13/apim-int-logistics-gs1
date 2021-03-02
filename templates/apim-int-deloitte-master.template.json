@@ -27,12 +27,18 @@
 			}
 		}
 	},
+	"variables": {
+		"token-apis": "?token=AJ2IBEOEX4SZ6PF4TK4HOYLAHZGBC",
+		"token-backends": "?token=AJ2IBEMX4CN3TKD4NCGL66DAHZGGA",
+		"token-global": "?token=AJ2IBEKP5TPUMHFHPEOFU2LAHZGJE",
+		"token-named-values": "?token=AJ2IBEOIH4LSVEQR3MHHOHTAHZGME"
+	},
 	"resources": [
 		{
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-namedValues.template.json', parameters('LinkedTemplatesUrlQueryString'))]",
+					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-namedValues.template.json', variables('token-named-values'))]",
 					"contentVersion": "1.0.0.0"
 				},
 				"parameters": {
@@ -53,7 +59,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-globalServicePolicy.template.json', parameters('LinkedTemplatesUrlQueryString'))]",
+					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-globalServicePolicy.template.json', variables('token-global'))]",
 					"contentVersion": "1.0.0.0"
 				},
 				"parameters": {
@@ -76,7 +82,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-backends.template.json', parameters('LinkedTemplatesUrlQueryString'))]",
+					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-backends.template.json', variables('token-backends'))]",
 					"contentVersion": "1.0.0.0"
 				},
 				"parameters": {
@@ -99,7 +105,7 @@
 			"properties": {
 				"mode": "Incremental",
 				"templateLink": {
-					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-apis.template.json', parameters('LinkedTemplatesUrlQueryString'))]",
+					"uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/apim-int-deloitte-apis.template.json', variables('token-apis'))]",
 					"contentVersion": "1.0.0.0"
 				},
 				"parameters": {

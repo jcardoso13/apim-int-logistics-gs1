@@ -8,25 +8,7 @@ steps:
       Azure Deployment: Deploy API Named Values
     inputs:
       azureSubscription: AzureLogistics
-      csmFile: apim-int-deloitte-namedValues.template.json
-      csmParametersFile: apim-int-deloitte-namedValues.params.json
-      location: westeurope
-      resourceGroupName: AzureLogistics-dev
-  - task: AzureResourceGroupDeployment@2
-    displayName: >-
-      Azure Deployment: Deploying API Backend
-    inputs:
-      azureSubscription: AzureLogistics
-      csmFile: apim-int-deloitte-backends.template.json
-      csmParametersFile: apim-int-deloitte-backends.params.json
-      location: westeurope
-      resourceGroupName: AzureLogistics-dev  
-  - task: AzureResourceGroupDeployment@2
-    displayName: >-
-      Azure Deployment: Deploy APIs
-    inputs:
-      azureSubscription: AzureLogistics
-      csmFile: apim-int-deloitte-apis.template.json
-      csmParametersFile: apim-int-deloitte-apis-template.params.json
+      csmFile: apim-int-deloitte-master.template.json
+      csmParametersFile: apim-int-deloitte-parameters.json
       location: westeurope
       resourceGroupName: AzureLogistics-dev
