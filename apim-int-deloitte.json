@@ -1,9 +1,1 @@
-{
-	"sourceApimName": "apim-int-deloitte",
-	"destinationApimName": "",
-	"resourceGroup": "AzureLogistics-dev",
-	"fileFolder": "c:\\Users\\joaopcardoso\\Desktop\\azureLogistics\\apim-extracted\\templates",
-	"linkedTemplatesBaseUrl": "",
-	"linkedTemplatesUrlQueryString": "",
-	"policyXMLBaseUrl": ""
-}
+{"sourceApimName":"apim-int-deloitte","destinationApimName":"","resourceGroup":"AzureLogistics-dev","fileFolder":"c:\\Users\\joaopcardoso\\Desktop\\azureLogistics\\apim-logistics-gs1\\templates","linkedTemplatesBaseUrl":"","linkedTemplatesUrlQueryString":"","policyXMLBaseUrl":""}

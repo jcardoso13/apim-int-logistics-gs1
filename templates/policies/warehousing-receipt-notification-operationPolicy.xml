@@ -15,7 +15,7 @@
 		<base />
 		<set-backend-service id="apim-generated-policy" backend-id="LogicApp_logic-int-pWarehousing_AzureLogistics-dev" />
 		<set-method id="apim-generated-policy">POST</set-method>
-		<rewrite-uri id="apim-generated-policy" template="/manual/paths/invoke/warehousing/receipt/notification?api-version=2016-06-01&amp;sp=/triggers/manual/run&amp;sv=1.0&amp;sig={{warehousing-processing-api_warehousing-receipt-notification_600b4f078299c9cd18f7905b}}" />
+		<rewrite-uri id="apim-generated-policy" template="/manual/paths/invoke/warehousing/receipt/notification?api-version=2016-06-01&amp;sp=/triggers/manual/run&amp;sv=1.0&amp;sig=0dakyK9tTWmNowmH9cNdRLlof9iCpAhiAJ45BfAz5Cc" />
 		<set-header id="apim-generated-policy" name="Ocp-Apim-Subscription-Key" exists-action="delete" />
 	</inbound>
 	<backend>

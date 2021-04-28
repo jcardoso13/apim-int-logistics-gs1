@@ -1,19 +1,19 @@
 {
-	"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-	"contentVersion": "1.0.0.0",
-	"parameters": {
-		"ApimServiceName": {
-			"value": "apim-int-deloitte"
-		},
-		"LinkedTemplatesBaseUrl": {
-			"value": "https://raw.githubusercontent.com/jcardoso13/apim-int-logistics-gs1/master/templates"
-		},
-		"LinkedTemplatesUrlQueryString": {
-			"value": ""
-		},
-		"PolicyXMLBaseUrl": {
-			"value": "https://raw.githubusercontent.com/jcardoso13/apim-int-logistics-gs1/master/templates/policies"
-		}
-	},
-	"resources": []
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "value": ""
+    },
+    "LinkedTemplatesBaseUrl": {
+      "value": ""
+    },
+    "LinkedTemplatesUrlQueryString": {
+      "value": ""
+    },
+    "PolicyXMLBaseUrl": {
+      "value": ""
+    }
+  },
+  "resources": []
 }

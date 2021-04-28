@@ -1,80 +1,131 @@
 {
-	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-	"contentVersion": "1.0.0.0",
-	"parameters": {
-		"ApimServiceName": {
-			"type": "string"
-		},
-		"PolicyXMLBaseUrl": {
-			"type": "string"
-		}
-	},
-	"resources": [
-		{
-			"properties": {
-				"description": "logic-int-eSAP",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-eSAP",
-				"url": "https://prod-33.westeurope.logic.azure.com/workflows/27926c65fe6c40eb904252a31e0aaa7b/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-eSAP_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		},
-		{
-			"properties": {
-				"description": "logic-int-pTransport",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pTransport",
-				"url": "https://prod-182.westeurope.logic.azure.com/workflows/ecc22a986e8d48e4a56b1983a54ecf12/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pTransport_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		},
-		{
-			"properties": {
-				"description": "logic-int-pWarehousing",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pWarehousing",
-				"url": "https://prod-129.westeurope.logic.azure.com/workflows/916ccd36fd9e4fdd8ec682e70268095e/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pWarehousing_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		},
-		{
-			"properties": {
-				"description": "logic-int-sDHL",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sDHL",
-				"url": "https://prod-132.westeurope.logic.azure.com/workflows/a71cbeea9af14f1d8fc4f61cdeadb4b2/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sDHL_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		},
-		{
-			"properties": {
-				"description": "logic-int-sOS",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sOS",
-				"url": "https://prod-65.westeurope.logic.azure.com/workflows/eb4041acfb2a4f6cab010df516cd616d/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sOS_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		},
-		{
-			"properties": {
-				"description": "logic-int-sSAP",
-				"resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sSAP",
-				"url": "https://prod-129.westeurope.logic.azure.com/workflows/8d04e68dcec04697ad3cf189d9a10a54/triggers",
-				"protocol": "http"
-			},
-			"name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sSAP_AzureLogistics-dev')]",
-			"type": "Microsoft.ApiManagement/service/backends",
-			"apiVersion": "2019-01-01"
-		}
-	]
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "type": "string"
+    },
+    "PolicyXMLBaseUrl": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "properties": {
+        "description": "func-int-liquidtransform",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Web/sites/func-int-liquidtransform",
+        "credentials": {
+          "header": {
+            "x-functions-key": [
+              "{{func-int-liquidtransform-key}}"
+            ]
+          }
+        },
+        "url": "https://func-int-liquidtransform.azurewebsites.net/api",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/func-int-liquidtransform')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-eSAP",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-eSAP",
+        "url": "https://prod-33.westeurope.logic.azure.com/workflows/27926c65fe6c40eb904252a31e0aaa7b/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-eSAP_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-pTransport",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pTransport",
+        "url": "https://prod-182.westeurope.logic.azure.com/workflows/ecc22a986e8d48e4a56b1983a54ecf12/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pTransport_AzureLogistics-_47857027be3e9bf7624a1a11bfdc62bd')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-pTransport",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pTransport",
+        "url": "https://prod-182.westeurope.logic.azure.com/workflows/ecc22a986e8d48e4a56b1983a54ecf12/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pTransport_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-pWarehousing",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pWarehousing",
+        "url": "https://prod-129.westeurope.logic.azure.com/workflows/916ccd36fd9e4fdd8ec682e70268095e/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pWarehousing_AzureLogistic_957f81176654cd51b6e178e064465f99')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-pWarehousing",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-pWarehousing",
+        "url": "https://prod-129.westeurope.logic.azure.com/workflows/916ccd36fd9e4fdd8ec682e70268095e/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-pWarehousing_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-sDHL",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sDHL",
+        "url": "https://prod-132.westeurope.logic.azure.com/workflows/a71cbeea9af14f1d8fc4f61cdeadb4b2/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sDHL_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-sOS",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sOS",
+        "url": "https://prod-65.westeurope.logic.azure.com/workflows/eb4041acfb2a4f6cab010df516cd616d/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sOS_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "logic-int-sSAP",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/logic-int-sSAP",
+        "url": "https://prod-129.westeurope.logic.azure.com/workflows/8d04e68dcec04697ad3cf189d9a10a54/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_logic-int-sSAP_AzureLogistics-dev')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "description": "test_xml",
+        "resourceId": "https://management.azure.com/subscriptions/44685035-1fa7-4806-ad41-1728fa06995d/resourceGroups/AzureLogistics-dev/providers/Microsoft.Logic/workflows/test_xml",
+        "url": "https://prod-63.westeurope.logic.azure.com/workflows/cb0c2dc140844c3396694e57b4964984/triggers",
+        "protocol": "http"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/LogicApp_testxml_AzureLogistics-dev_446850351fa74806ad411728fa06995d')]",
+      "type": "Microsoft.ApiManagement/service/backends",
+      "apiVersion": "2019-01-01"
+    }
+  ]
 }

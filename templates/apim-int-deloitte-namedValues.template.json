@@ -166,6 +166,31 @@
     },
     {
       "properties": {
+        "tags": [
+          "key",
+          "function",
+          "auto"
+        ],
+        "secret": true,
+        "displayName": "func-int-liquidtransform-key",
+        "value": "/5uspVW1XZlG+L+3qGDcBf9pAJpyqiyMsI1JgOEnMknG1RIveLHQog=="
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/func-int-liquidtransform-key')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "secret": true,
+        "displayName": "Logger-Credentials--606b207bace8fb22947da89d",
+        "value": "518890aa-2d27-4c67-9cdc-c148ac1c0fac"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/606b207bace8fb22947da89c')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
         "tags": [],
         "secret": true,
         "displayName": "sap-experience-api_pick-up-order_5fc760903a6e9b6691d951ea",
@@ -216,6 +241,17 @@
         "value": "qLyUdR3u8qZ_TGBZ8OpEt_EaMK2rsNS4QRwcXMsm4SE"
       },
       "name": "[concat(parameters('ApimServiceName'), '/6033c994e0c29b98f5efbada')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "transport-processing-api_transport-instruction_60477d842c06df7db6ce4857",
+        "value": "NAzsITeR4M0NeEK1hdu453jyp5g7eD7M4lN0N2jOmDw"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/60477d842c06df7db6ce4857')]",
       "type": "Microsoft.ApiManagement/service/properties",
       "apiVersion": "2019-01-01"
     },
@@ -282,6 +318,28 @@
         "value": "8Yb17lNYCdQbkhq5QQT6ycNIWGpzIjnt5wjnuFmPi20"
       },
       "name": "[concat(parameters('ApimServiceName'), '/5fd960e63a0ac9fdae450407')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_testxml_603f9ac8646b97360946fc42",
+        "value": "BSGZZH0jQaFalNt6zxO7hS1QOgR7JUUfXFnlP_VNfwk"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/603f9ac8646b97360946fc42')]",
+      "type": "Microsoft.ApiManagement/service/properties",
+      "apiVersion": "2019-01-01"
+    },
+    {
+      "properties": {
+        "tags": [],
+        "secret": true,
+        "displayName": "warehousing-processing-api_warehousing-outbound-instruction_60475baa834ba155cfbd82f0",
+        "value": "0dakyK9tTWmNowmH9cNdRLlof9iCpAhiAJ45BfAz5Cc"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/60475baa834ba155cfbd82f0')]",
       "type": "Microsoft.ApiManagement/service/properties",
       "apiVersion": "2019-01-01"
     },
